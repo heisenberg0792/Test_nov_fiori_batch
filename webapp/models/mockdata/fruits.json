@@ -1,0 +1,219 @@
+{
+    "fruits":[
+        {
+            "name": "Banana",
+            "type": "Cytrus",
+            "color": "yellow",
+            "price": "1",
+            "currency": "USD",
+            "status" : "Available",
+            "imageURL": "https://www.news-medical.net/image.axd?picture=2018%2F2%2Fbanana.jpg"
+        },
+        {
+            "name": "Apple",
+            "type": "Cytrus",
+            "color": "red",
+            "price": "5",
+            "currency": "USD",
+            "status" : "Discontinued",
+            "imageURL": "https://5.imimg.com/data5/YY/EN/MY-8155364/fresh-apple-500x500.jpg"
+        },
+        {
+            "name": "Pineapple",
+            "type": "Alakaline",
+            "color": "red",
+            "price": "2",
+            "currency": "USD",
+            "status" : "Out of Stock",
+            "imageURL": "https://m.media-amazon.com/images/I/71bNsWlkyeL._SL1500_.jpg"
+        },
+        {
+            "name": "promoganate",
+            "type": "Cytrus",
+            "color": "green",
+            "price": "3",
+            "currency": "USD",
+            "status" : "Available",
+            "imageURL": "https://images.healthshots.com/healthshots/en/uploads/2021/09/27184641/pomegranate-1600x900.jpg"
+        },
+        {
+            "name": "dragonfruit",
+            "type": "Alakaline",
+            "color": "red",
+            "price": "10",
+            "currency": "USD",
+            "status" : "Out of Stock",
+            "imageURL": "https://5.imimg.com/data5/ANDROID/Default/2021/4/LG/BJ/HF/13447959/product-jpeg.jpg"
+        },
+        {
+            "name": "Orange",
+            "type": "Cytrus",
+            "color": "blue",
+            "price": "3",
+            "currency": "USD",
+            "status" : "Discontinued",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg"
+        },
+        {
+            "name": "Banana",
+            "type": "Cytrus",
+            "color": "yellow",
+            "price": "1",
+            "currency": "USD",
+            "status" : "Available",
+            "imageURL": "https://www.news-medical.net/image.axd?picture=2018%2F2%2Fbanana.jpg"
+        },
+        {
+            "name": "Apple",
+            "type": "Cytrus",
+            "color": "red",
+            "price": "5",
+            "currency": "USD",
+            "status" : "Discontinued",
+            "imageURL": "https://5.imimg.com/data5/YY/EN/MY-8155364/fresh-apple-500x500.jpg"
+        },
+        {
+            "name": "Pineapple",
+            "type": "Alakaline",
+            "color": "red",
+            "price": "2",
+            "currency": "USD",
+            "status" : "Out of Stock",
+            "imageURL": "https://m.media-amazon.com/images/I/71bNsWlkyeL._SL1500_.jpg"
+        },
+        {
+            "name": "promoganate",
+            "type": "Cytrus",
+            "color": "green",
+            "price": "3",
+            "currency": "USD",
+            "status" : "Available",
+            "imageURL": "https://images.healthshots.com/healthshots/en/uploads/2021/09/27184641/pomegranate-1600x900.jpg"
+        },
+        {
+            "name": "dragonfruit",
+            "type": "Alakaline",
+            "color": "red",
+            "price": "10",
+            "currency": "USD",
+            "status" : "Out of Stock",
+            "imageURL": "https://5.imimg.com/data5/ANDROID/Default/2021/4/LG/BJ/HF/13447959/product-jpeg.jpg"
+        },
+        {
+            "name": "Orange",
+            "type": "Cytrus",
+            "color": "blue",
+            "price": "3",
+            "currency": "USD",
+            "status" : "Discontinued",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg"
+        }
+        
+    ],
+    "cities":[
+        {
+            "name": "Jaipur",
+            "famousFor": "Forts",
+            "type": "Tier2",
+            "otherName":"Pink City"
+        },
+        {
+            "name": "Hyderabad",
+            "famousFor": "Nizams",
+            "type": "Tier1",
+            "otherName":"Nizam City"
+        },
+        {
+            "name": "Rajamundry",
+            "famousFor": "Poets",
+            "type": "Tier3",
+            "otherName":"Rajamahendry"
+        },
+        {
+            "name": "Bhubaneswar",
+            "famousFor": "Temples",
+            "type": "Tier2",
+            "otherName":"Temple City"
+        },
+        {
+            "name": "Banglaore",
+            "famousFor": "IT",
+            "type": "Tier1",
+            "otherName":"Silicon Valley of India"
+        }
+    ],
+    "suppliers":[
+        {
+            "name" : "Mahadev_suppliers",
+            "sinceWhen": "1977",
+            "contactPerson": "Shiva",
+            "contactNo": 9438465892,
+            "city": "New Delhi",
+            "latitude": 28.610001,
+            "longitude": 77.23003,
+            "suppFruits": [
+                {
+                    "name": "Banana",
+                    "quantity": 1200
+                },
+                {
+                    "name": "Apple",
+                    "quantity": 500
+                },
+                {
+                    "name": "Pineapple",
+                    "quantity": 246
+                }
+
+            ]
+        },
+        {
+            "name" : "FrutiBaby",
+            "sinceWhen": "1989",
+            "contactPerson": "baby",
+            "contactNo": 9985365869,
+            "city": "Hyderabad",
+            "latitude": 32.610001,
+            "longitude": 56.23003,
+            "suppFruits": [
+                {
+                    "name": "dragonfruit",
+                    "quantity": 1200
+                },
+                {
+                    "name": "promoganate",
+                    "quantity": 120
+                },
+                {
+                    "name": "Pineapple",
+                    "quantity": 12000
+                }
+
+            ]
+        },
+        {
+            "name" : "NinjaDelivery",
+            "sinceWhen": "2003",
+            "contactPerson": "NinjaDev",
+            "contactNo": 9486594564,
+            "city": "Bangalore",
+            "latitude": 52.610001,
+            "longitude": 23.23003,
+            "suppFruits": [
+                {
+                    "name": "Orange",
+                    "quantity": 156
+                },
+                {
+                    "name": "Apple",
+                    "quantity": 56
+                },
+                {
+                    "name": "Pineapple",
+                    "quantity": 192
+                }
+
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="praveen.controller.view2"
+            xmlns:core="sap.ui.core">
+    <Page title="{PRODUCT_ID} - {CATEGORY}">
+    
+    <IconTabBar>
+        <items>
+            <IconTabFilter text="More Info" icon="sap-icon://information">
+                <content>
+                    <core:Fragment fragmentName="praveen.fragments.moreinfo" type="XML"></core:Fragment>
+                </content>
+            </IconTabFilter>
+            <IconTabFilter text="Supplier" icon="sap-icon://supplier">
+                <content>
+                    <core:Fragment fragmentName="praveen.fragments.supplier" type="XML"></core:Fragment>
+                </content>
+            </IconTabFilter>
+            <IconTabFilter text="Cities" icon="sap-icon://addresses">
+                <content>
+                    <core:Fragment fragmentName="praveen.fragments.cities" type="XML"></core:Fragment>
+                </content>
+            </IconTabFilter>
+        </items>
+    </IconTabBar>
+    </Page>
+</mvc:View>

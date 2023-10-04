@@ -1,0 +1,113 @@
+{
+    "_version": "1.1.0",
+    "sap.app":{
+        "id":"myRouter",
+        "type":"application",
+        "title":"myRouterApp",
+        "applicationVersion": {
+            "version": "{_version}"
+        },
+        "dataSources":{
+            "mainService" : {
+                "uri":"/sap/opu/odata/SAP/ZNOV_ODATA_TEST_SRV",
+                "type":"OData",
+                "settings":{
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+    },
+    "sap.ui":{
+        "technology": "UI5",
+        "deviceTypes":{
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        }
+    },
+    "sap.ui5":{
+        "dependencies": {
+            "minUI5Version": "1.114.0"
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models":{
+            "":{
+                "type":"sap.ui.model.odata.v2.ODataModel",
+                "dataSource": "mainService",
+                "preload": true,
+                "settings":{ }
+            },
+            "furit":{
+                "type":"sap.ui.model.json.JSONModel",
+                "uri":"models/mockdata/fruits.json",
+                "settings":{}
+            }
+        },
+        "rootView":{
+            "id": "idApp",
+            "viewName":"praveen.view.App",
+            "type":"XML"
+        },
+        "routing":{
+            "config":{
+                "routerClass":"sap.m.routing.Router",
+                "viewPath":"praveen.view",
+                "viewType":"XML",
+                "controlId":"idAppCon"
+            },
+            "routes":[
+                {
+                    "pattern": "",
+                    "name":"Home",
+                    "target":["Master","Default"]
+                },
+                {
+                    "pattern":"productSet/{productId}",
+                    "name":"productDetail",
+                    "target":["Master", "Details"]
+                },
+                {
+                    "pattern":"suppliers/{supplierId}",
+                    "name": "SupplierDetails",
+                    "target":["Master", "Supplier"]
+                },
+                {
+                    "pattern":"manageProduct",
+                    "name": "manageProduct",
+                    "target":["Master", "Product"]
+                }
+            ],
+            "targets":{
+                "Master" : {
+                    "viewId":"idView1",
+                    "viewName":"view1",
+                    "controlAggregation": "masterPages"
+
+                },
+                "Default": {
+                    "viewId":"idDefault",
+                    "viewName":"default",
+                    "controlAggregation": "detailPages"
+                },
+                "Details":{
+                    "viewId":"idView2",
+                    "viewName":"view2",
+                    "controlAggregation": "detailPages"
+                },
+                "Supplier":{
+                    "viewId": "idPieChart",
+                    "viewName": "pieChart",
+                    "controlAggregation": "detailPages"
+                },
+                "Product":{
+                    "viewId": "idManageProduct",
+                    "viewName":"manageProduct",
+                    "controlAggregation": "detailPages"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <Table id="idTable" items='{/SupplierSet}'>
+        <columns>
+            <Column>
+                <header>
+                    <Text text="Supplier Id"></Text>
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Text text="Supplier Name"></Text>
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Text text="City"></Text>
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Text text="Contact Info"></Text>
+                </header>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem  type="Navigation" press="onPress">
+                <cells>
+                    <Text text="{BP_ID}"></Text>
+                    <Input value="{COMPANY_NAME}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
+                    <Text text="{CITY}"></Text>
+                    <VBox>
+                        <Text text="{EMAIL_ADDRESS}"></Text>
+                        <Text text="{PHONE_NUMBER}"></Text>
+                    </VBox>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+                data-sap-ui-theme="sap_fiori_3_dark"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-xx-bindingSyntax="complex"
+                data-sap-ui-resourceroots='{
+                    "praveen" : "./"
+                }'>
+
+        </script>    
+        <script>
+            var oContainer = new sap.ui.core.ComponentContainer("idContainer",{
+                "name": "praveen" //here we should give the name of the package where the component will be contained
+                                 // we will save the Component.js in the root view (webapp) it self that is why the name 
+                                // is given as "praveen", which is defined as the root package in index.html
+            });
+            oContainer.placeAt("content");
+        </script>
+    </head>
+    <body>
+        <div id="content"></div>
+    </body>
+</html>

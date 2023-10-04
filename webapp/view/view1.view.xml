@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="praveen.controller.view1">
+<Page title="Product Details">
+    <List id="idList" items="{/ProductSet}" itemPress="onItemPress" growing="true" growingThreshold="10" 
+                growingScrollToLoad="true">
+        <headerToolbar>
+            <Toolbar>
+                <SearchField id="idSearchField" search="onSearch"></SearchField>
+
+            </Toolbar>
+        </headerToolbar>
+        <items>
+            <ObjectListItem intro="{CATEGORY}" title="{PRODUCT_ID}" number="{PRICE}" numberUnit="{CURRENCY_CODE}"
+                            icon="{PRODUCT_PIC_URL}" type="Navigation">
+                <firstStatus>
+                    <ObjectStatus text="{path: 'SUPPLIER_NAME'}" state="{path: 'LifecycleStatus', formatter:'.formatter.getState'}"></ObjectStatus>
+                </firstStatus>
+            </ObjectListItem>
+        </items>
+    </List>
+    <footer>
+        <Toolbar>
+            <ToolbarSpacer />
+            <Button icon="sap-icon://add" press="onAdd" tooltip="Add a new Product"></Button>
+        </Toolbar>
+    </footer>
+</Page>
+</mvc:View>

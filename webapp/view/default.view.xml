@@ -1,0 +1,4 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="praveen.controller.default">
+    <Image src="https://thumbs.dreamstime.com/b/fruit-vegetables-7134858.jpg" alt="Image couldn't load"
+             height="100%" width="100%"></Image>
+</mvc:View>

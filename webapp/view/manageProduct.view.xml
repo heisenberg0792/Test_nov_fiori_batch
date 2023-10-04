@@ -1,0 +1,68 @@
+<mvc:View   xmlns:mvc="sap.ui.core.mvc" 
+            xmlns="sap.m" 
+            xmlns:core="sap.ui.core"
+            xmlns:l="sap.ui.layout"
+	        xmlns:f="sap.ui.layout.form" 
+            controllerName="praveen.controller.manageProduct">
+    <VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Product"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Product Id" />
+				<Input id="name" value="{prod>/prodData/PRODUCT_ID}" submit="onEnter"/>
+				<Button id="idGetExpensive" icon="sap-icon://product" tooltip="Get the Most expensive product" press="getExpensiveProduct" ></Button>
+				<Label text="Name/Description" />
+				<Input value="{prod>/prodData/NAME}">
+				</Input>
+				<Input value="{prod>/prodData/DESCRIPTION}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label text="SupplierId/Supplier Name" />
+				<Input value="{prod>/prodData/SUPPLIER_ID}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Input value="{prod>/prodData/SUPPLIER_NAME}" />
+				<Label text="Price" />
+				<Input value="{prod>/prodData/PRICE}">
+					<layoutData>
+						<l:GridData span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Input value="{prod>/prodData/CURRENCY_CODE}" />
+				<Label text="Category" />
+				<Select id="category" selectedKey="{prod>/prodData/CATEGORY}">
+					<items>
+						<core:Item text="Notebooks" key="Notebooks"/>
+						<core:Item text="PDAs &amp; Organizers" key="PDAs &amp; Organizers"/>
+						<core:Item text="Flat Screen Monitors" key="Flat Screen Monitors"/>
+					</items>
+				</Select>
+			</f:content>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button id="idSave" text="Save" press="onSave"></Button>
+				<Button text="Clear" press="onClear"></Button>
+				<Button id="idDelete" text="Delete" press="onDelete"></Button>
+			</Toolbar>
+		</f:SimpleForm>
+	</VBox>
+</mvc:View>
